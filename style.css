@@ -80,7 +80,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: crimson;
+    color: rgb(0, 238, 255);
 }
 
 /*--------About----------------*/
