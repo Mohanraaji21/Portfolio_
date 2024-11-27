@@ -13,22 +13,25 @@
 
         <div class="container">
             <nav>
-                <img src="images/Logo/Mohy2.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                <!-- <img src="images/Mohy3.png" class="logo"> -->
+                <span>Mohy</span>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
                     <!--<li><a href="#">Education</a></li>
                     <li><a href="#">Experience</a></li>
                     <li><a href="#">Services</a></li>-->
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Certifications</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Certifications">Certifications</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
 
             <div class="header-text">
                 <p>Web Developer</p>
-                <h1>Hi, I'm <span>Mohanraaji</span> !</h1>
+                <h1>Hi, I'm <span>Mohanraaji !</span></h1>
             </div>
         </div>
 
@@ -75,19 +78,19 @@
                         <ul>
                            <li> 
                             <span>2020-2024</span><br>
-                            Bachelor of Technology in Electrical and Electronics Engineering<br>
+                           <b> Bachelor of Technology in Electrical and Electronics Engineering </b><br>
                             Sri Manakula Vinayagar Engineering College<br>
                             CGPA: 8.16<br>
                             </li>
                             <li>
                             <span>2018-2020</span><br>
-                            HSC<br>
+                          <b>HSC</b><br>
                             St.Joseph of cluny Matric Higher Secondary School<br>
                             Percentage:69.5%<br>
                             </li>
                             <li>
                             <span>2017-2018</span><br>
-                            SSLC<br>
+                          <b>SSLC</b><br>
                             St.Joseph of cluny Matric Higher Secondary School<br>
                             Percentage:81.2%<br>
                             </li>
@@ -136,7 +139,7 @@
 
     <!-- --------------------------------Skills----------------------------------- -->
 
-    <div class="skills">
+    <div class="skills" id="Skills">
 
         <h1 class="subtitle">Skills</h1>
         <div class="container">
@@ -268,7 +271,7 @@
 
 
 
-        <div class="Certifications">
+        <div class="Certifications" id="Certifications">
 
             
             <div class="Container">
@@ -277,7 +280,7 @@
 
                 <div class="slider">
                     <div class="slides">
-                        <img class="slide" src="images/Certifications/autocad.png">
+                        <!-- <img class="slide" src="images/Certifications/autocad.png"> -->
                         <img class="slide" src="images/Certifications/AZ900.png">
                         <img class="slide" src="images/Certifications/cloud.png" >
                         <img class="slide" src="images/Certifications/CSN.png" >
@@ -285,7 +288,7 @@
                         <img class="slide" src="images/Certifications/image.png" >
                         <img class="slide" src="images/Certifications/java.png" >
                         <img class="slide" src="images/Certifications/PL900.png" >
-                        <img class="slide" src="images/Certifications/python.png" >
+                        <!-- <img class="slide" src="images/Certifications/python.png" > -->
                         <img class="slide" src="images/Certifications/Screenshot 2024-10-22 122906.png" >
                         <img class="slide" src="images/Certifications/Screenshot 2024-10-22 123153.png" >
                         <img class="slide" src="images/Certifications/security.png" >
@@ -301,7 +304,7 @@
 
 
 
-        <div class="Contact">
+        <div class="Contact" id="Contact">
             <h2>Contact Me</h2>
             <p>If you have any questions or just want to say hi, feel free to reach out!</p>
             <a href="resume/Mohanraaji B res.pdf" download="Mohanraaji_Resume" class="btn-download">Download Resume</a>
@@ -321,12 +324,25 @@
                 </div>
                 <button type="submit" class="btn-submit">Submit</button>
             </form>
+
+
+            <div>
+
+                <a href="https://www.linkedin.com/in/mohanraaji-b-85b34a289/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="linkedIn"></a>
+                <a href="https://github.com/Mohanraaji21"><img src="https://cdn-icons-png.flaticon.com/256/25/25231.png" alt="GitHub"></a>
+            </div>
+
+            <div>
+                <p>Email : mohanrajib21@gmail.com</p>
+                <p>Mobile : 9600401417 </p>
+            </div>
         </div>
         
 
 
 
       <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+      <script src="https://kit.fontawesome.com/09dcc5810b.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>

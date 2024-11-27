@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Life+Savers:wght@400;700;800&family=Love+Light&family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Protest+Revolution&family=Rye&family=Sedgwick+Ave&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Protest+Riot&family=Rakkas&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +9,8 @@
 }
 
 body{
-    background-color: black;
+    /* background-color: black; */
+    background: linear-gradient(90deg, #12c2e9, #c471ed, #f64f59);
     color: aliceblue;
 }
 
@@ -19,7 +20,7 @@ body{
     height: 100vh;
     background: url(images/Profile/profile.webp);
     background-position: right;
-    background-size: contain;
+    background-size: contain ;
     background-repeat: no-repeat;
 }
 
@@ -33,6 +34,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: fixed;
 }
 
 .logo{
@@ -70,6 +72,7 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 20%;
     font-size: 30px;
+    
 }
 
 .header-text h1{
@@ -147,7 +150,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents.active-tab{
-
+    color: black;
     display: block;
 }
 
@@ -156,7 +159,7 @@ nav ul li a:hover::after{
 
 .skills .container{
     display: grid;
-    grid-template-columns: repeat(5, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-auto-rows: minmax(50px, 1fr);
     gap: 40px;
     padding: 20px;
@@ -250,6 +253,7 @@ nav ul li a:hover::after{
     max-height: 700px;
     width: 80%;
     display: none;
+    z-index: 1;
 }
 
 img.displaySlide
@@ -297,308 +301,248 @@ img.displaySlide
 
 /* ------------Contact  */
 
-
-.contact-me {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-}
-
-.contact-me h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.contact-me p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: #555;
-}
-
-.btn-download {
-    display: inline-block;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.btn-download:hover {
-    background-color: #0056b3;
-}
-
-form {
-    text-align: left;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    resize: none;
-}
-
-textarea {
-    resize: vertical;
-}
-
-.btn-submit {
-    display: inline-block;
-    background-color: #28a745;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-.btn-submit:hover {
-    background-color: #218838;
-}
-
-
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-/* Header */
-#header nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-#header nav ul li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-#header nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 14px;
-}
-
-/* About Section */
-#abt-col p {
-    font-size: 14px;
-    margin: 10px 0;
-}
-
-.tab-titles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}
-
-.tab-links {
-    cursor: pointer;
-    padding: 10px;
-    background: #eee;
-    border-radius: 5px;
-}
-
-.tab-contents ul li {
-    font-size: 14px;
-}
-
-/* Skills Section */
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.skills .skill {
-    flex: 1 1 45%;
-    max-width: 100px;
-    text-align: center;
-}
-
-.skills .skill img {
-    width: 100%;
-    height: auto;
-}
-
-/* Certifications Section */
-.Certifications .slider {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-}
-
-.Certifications .slider .slides {
-    display: flex;
-    gap: 10px;
-}
-
-.Certifications .slider img {
-    width: 100px;
-    height: auto;
-    border-radius: 10px;
-}
-
-
-
-
-/*  */
-
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-body {
-    font-family: Arial, sans-serif;
-}
-
-/* Mobile-First Styling */
-#header nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    list-style: none;
+/* Contact Section Styling */
+.Contact {
+    padding: 2rem 5%;
+    /* background-color: #000000; */
+    /* color: #333; */
+    color:#12c2e9;
     text-align: center;
-    background-color: #333;
-    padding: 10px;
 }
 
-#header nav ul li a {
+.Contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.Contact p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #745d5d;
+    line-height: 1.6;
+}
+
+/* Download Button */
+.btn-download {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    margin-bottom: 2rem;
+    background-color: crimson;
+    color: #fff;
     text-decoration: none;
-    color: white;
-    padding: 10px 15px;
-    display: block;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-#header nav ul li a:hover {
-    background-color: #575757;
+.btn-download:hover {
+    background-color: #d01717;
 }
 
-#About {
-    padding: 20px;
-    text-align: center;
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
-.abt-col {
-    margin-bottom: 20px;
+.form-group {
+    margin-bottom: 1.5rem;
 }
 
-.tab-titles {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 20px 0;
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #444;
 }
 
-.tab-links {
-    padding: 10px 15px;
-    background-color: #eee;
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: crimson;
+    box-shadow: 0 0 5px rgba(220, 20, 60, 0.5);
+}
+
+textarea {
+    resize: none;
+}
+
+/* Submit Button */
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 0rem;
+    background-color: crimson;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.tab-links:hover {
-    background-color: #ddd;
+.btn-submit:hover {
+    background-color: #d01717;
 }
 
-.tab-contents ul {
-    list-style: none;
-    padding: 0;
+
+.Contact div a img{
+    margin-left: 50px;
+    width: 30px;
+    height: 30px;
 }
 
-.tab-contents ul li {
-    margin: 5px 0;
-}
 
-#Skills .skills {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-    padding: 20px;
-    text-align: center;
-}
 
-.skill img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 10px;
-}
 
-#Certifications .slider {
-    overflow: hidden;
-    margin: 20px auto;
-    max-width: 90%;
-}
 
-#Certifications .slides {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-}
 
-#Certifications .slides img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Larger Screens */
-@media (min-width: 768px) {
-    #header nav ul {
-        flex-direction: row;
-        justify-content: center;
-        gap: 20px;
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .Contact h2 {
+        font-size: 2rem;
     }
 
-    #Skills .skills {
-        grid-template-columns: repeat(2, 1fr);
+    .Contact p {
+        font-size: 1rem;
+    }
+
+    form {
+        padding: 1.5rem;
+    }
+
+    .btn-download {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.5rem;
     }
 }
 
-@media (min-width: 1024px) {
-    #Skills .skills {
-        grid-template-columns: repeat(3, 1fr);
+@media (max-width: 480px) {
+    .Contact h2 {
+        font-size: 1.8rem;
     }
 
-    #header nav ul {
-        max-width: 1200px;
-        margin: 0 auto;
+    .Contact p {
+        font-size: 0.9rem;
     }
 
-    .tab-titles {
-        justify-content: flex-start;
+    .btn-submit {
+        font-size: .5rem;
     }
 }
 
+
+#header .container i {
+    display: none;
+}
+
+nav span{
+    font-size: 40px;
+    font-family: "Honk", system-ui;
+
+}
+
+
+
+
+
+/* --------------------------------------------------------Phone screen -------------------------------*/
+
+@media only screen and (max-width:600px){
+
+    #header{
+        background-image: none;
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+        }
+    .header-text h1{
+        font-size: 30px;
+        }
+
+    #header .container i {
+            display: block;
+            font-size: 25px;
+        }
+    nav ul{
+            background: #ff004f;
+            position: fixed;
+            top: 0;
+            right: -200px;
+            width: 200px;
+            height: 100vh;
+            padding-top: 50px;
+            z-index:100;
+            transition: right 0.5s;
+        }
+    
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-regular{
+        position: absolute;
+        left: 25px;
+        top: 25px;
+        cursor: pointer;
+
+    }
+
+    nav .fa-solid
+    {
+        /* position: absolute; */
+      /* left: 500px;  */
+      padding-left: 250px;
+    }
+
+    nav span{
+        font-size: 40px;
+    }
+
+    #About .container .row .abt-col h1{
+        font-size: 30px;
+    }
+
+    #Skills 
+    {
+        margin-top: 30%;
+    }
+
+    #Skills .subtitle{
+        font-size: 30px;
+    }
+
+
+    #Certifications .Container .slider .slides .slide{
+        height: 10px;
+    }
+
+    #Certifications .Container .sub-title
+    {
+        font-size: 30px;
+    }
+}
