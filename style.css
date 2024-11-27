@@ -414,7 +414,11 @@ textarea {
     height: 30px;
 }
 
-
+#msgSent{
+    color: rgb(0, 255, 13);
+    font-size: 25px;
+    font-weight: 600;
+}
 
 
 
